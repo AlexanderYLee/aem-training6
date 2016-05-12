@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/aem-training6"/>
+    <filter root="/content/searchAssetPage"/>
+    <filter root="/apps/system/config"/>
+    <filter root="/home/users/system/uCgq-bI6fxwzt70tHpxu"/>
+    <filter root="/jcr:system/rep:permissionStore/crx.default/readUser"/>
 </workspaceFilter>

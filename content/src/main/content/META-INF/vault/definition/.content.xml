@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:description="aem-training6 Pacakge"
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2016-05-12T14:31:47.883+03:00"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2016-05-12T14:31:47.883+03:00"
+    jcr:lastModifiedBy="admin"
     jcr:primaryType="vlt:PackageDefinition"
-    sling:resourceType="cq/packaging/components/pack/definition"
-    buildCount="1"
-    cqVersion="6.1.0"
-    group="epam"
+    buildCount="2"
+    builtWith="Adobe Experience Manager-6.1.0.20150507"
+    group="my_packages"
+    lastUnwrapped="{Date}2016-05-12T14:31:47.883+03:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2016-05-12T14:31:47.883+03:00"
+    lastWrappedBy="admin"
     name="aem-training6-content"
-    path="/etc/packages/epam/aem-training6-content-1.0-SNAPSHOT"
-    version="1.0-SNAPSHOT">
+    version="1.0">
     <filter jcr:primaryType="nt:unstructured">
         <f0
             jcr:primaryType="nt:unstructured"
             mode="replace"
-            root="/apps/aem-training6"
+            root="/apps/aem-training6/components"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/aem-training6/templates"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/searchAssetPage"
+            rules="[exclude:/content/searchAssetPage/6.7_Query_Syntax_And_Best_Practices.pdf]"/>
+        <f3
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/system/config"
+            rules="[]"/>
+        <f4
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/home/users/system/uCgq-bI6fxwzt70tHpxu"
+            rules="[]"/>
+        <f5
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/rep:policy/allow15"
+            rules="[]"/>
+        <f6
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/jcr:system/rep:permissionStore/crx.default/readUser"
             rules="[]"/>
     </filter>
 </jcr:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:system">
+    <rep:privileges/>
+    <jcr:versionStorage/>
+    <rep:permissionStore jcr:primaryType="rep:PermissionStore">
+        <crx.default jcr:primaryType="rep:PermissionStore">
+            <readUser jcr:primaryType="rep:PermissionStore">
+                <_x0031_259237738
+                    jcr:primaryType="rep:PermissionStore"
+                    rep:accessControlledPath="/content">
+                    <_x0031_8
+                        jcr:primaryType="rep:Permissions"
+                        rep:isAllow="{Boolean}true"
+                        rep:privileges="{Long}[259]"/>
+                </_x0031_259237738>
+            </readUser>
+        </crx.default>
+    </rep:permissionStore>
+    <rep:policy/>
+    <jcr:activities/>
+    <jcr:nodeTypes/>
+    <rep:namespaces/>
+</jcr:root>

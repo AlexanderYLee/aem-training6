@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-05-12T14:09:53.614+03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/aem-training6/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Search for pdf asset"
+        sling:resourceType="aem-training6/components/page-content">
+        <search-button
+            jcr:lastModified="{Date}2016-05-12T14:09:53.608+03:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-training6/components/search-button"
+            keywords="QUERY BUILDER"
+            method="QueryBuilder"
+            path="/content/searchAssetPage"/>
+    </jcr:content>
+    <_x0036_.7_Query_Syntax_And_Best_Practices.pdf/>
+    <oak:index jcr:primaryType="nt:unstructured">
+        <damAssetLucene
+            jcr:primaryType="oak:QueryIndexDefinition"
+            async="async"
+            compatVersion="{Long}2"
+            evaluatePathRestrictions="{Boolean}true"
+            reindex="{Boolean}false"
+            reindexCount="{Long}2"
+            type="lucene">
+            <aggregates jcr:primaryType="nt:unstructured">
+                <dam:Asset jcr:primaryType="nt:unstructured">
+                    <include0
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content"/>
+                    <include1
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/metadata"/>
+                    <include2
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/metadata/*"/>
+                    <include3
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/renditions"/>
+                    <include4
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/renditions/original"/>
+                    <include5
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/renditions/original/jcr:content"/>
+                    <include6
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/comments"/>
+                    <include7
+                        jcr:primaryType="nt:unstructured"
+                        path="jcr:content/comments/*"/>
+                </dam:Asset>
+            </aggregates>
+            <indexRules jcr:primaryType="nt:unstructured">
+                <dam:Asset jcr:primaryType="nt:unstructured">
+                    <properties jcr:primaryType="nt:unstructured">
+                        <prop0
+                            jcr:primaryType="nt:unstructured"
+                            isRegexp="{Boolean}true"
+                            name=".*"
+                            nodeScopeIndex="{Boolean}true"/>
+                        <prop1
+                            jcr:primaryType="nt:unstructured"
+                            name="jcr:content/metadata/dc:format"
+                            propertyIndex="{Boolean}true"/>
+                    </properties>
+                </dam:Asset>
+            </indexRules>
+        </damAssetLucene>
+    </oak:index>
+</jcr:root>
