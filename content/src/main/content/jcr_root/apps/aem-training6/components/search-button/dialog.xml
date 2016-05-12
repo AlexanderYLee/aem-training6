@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Forms Submit Button"
+    title="Search for PDF asset component"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <method
+            jcr:primaryType="cq:Widget"
+            defaultValue="QueryBuilder"
+            fieldLabel="Search method"
+            name="./method"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <QueryBuilder
+                    jcr:primaryType="nt:unstructured"
+                    text="QueryBuilder"
+                    value="QueryBuilder"/>
+                <QueryManager
+                    jcr:primaryType="nt:unstructured"
+                    text="QueryManager"
+                    value="QueryManager"/>
+            </options>
+        </method>
+        <keywords
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            defaultValue="QUERY BUILDER"
+            fieldLabel="Keywords"
+            name="./keywords"
+            xtype="textfield"/>
+        <path
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            defaultValue="/content/dam"
+            fieldLabel="Search path"
+            name="./path"
+            rootPath="/content"
+            showTitlesInTree="{Boolean}false"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

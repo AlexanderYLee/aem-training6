@@ -24,11 +24,10 @@ public class ServiceFinder {
     public ISearch getService(String method) {
 
         try {
-            ServiceReference[] refs = ctx.getBundleContext().getAllServiceReferences(ISearch.class.getName(), null);
-            for (ServiceReference ref : refs) {
-                ISearch s = (ISearch) ctx.getBundleContext().getService(ref);
-                if (s.getClass().getName().contains(method))
-                    return s;
+            ServiceReference[] refs = ctx.getBundleContext().getServiceReferences(ISearch.class.getName(),
+                    String.format("(component.name=*%s*)", method));
+            if (refs.length==1){
+                return (ISearch) ctx.getBundleContext().getService(refs[0]);
             }
         } catch (InvalidSyntaxException e) {
             logger.debug(e.getMessage());

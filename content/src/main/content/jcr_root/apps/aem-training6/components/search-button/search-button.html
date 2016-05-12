@@ -1,0 +1,8 @@
+<form method="get" action="/services/search">
+	<div data-sly-use.searchBtnProps="SearchButtonProps">
+    	<input type="hidden" name="method" value="${searchBtnProps.method}"/>
+    	<input type="hidden" name="keywords" value="${searchBtnProps.keywords}"/>
+    	<input type="hidden" name="path" value="${searchBtnProps.path}"/>
+    </div>
+	<input type="submit" title="Search" value="Search">
+</form>

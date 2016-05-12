@@ -5,9 +5,5 @@ package com.epam.aemtraining;
  */
 public interface SearchServiceConfig {
 
-    String getKeywords();
-
-    String getMethod();
-
-    String getPath();
+    String getType();
 }
