@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root jcr:language="ru" jcr:primaryType="sling:Folder" jcr:mixinTypes="[mix:language]"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0">
+    <resultFormCaption jcr:primaryType="sling:MessageEntry" sling:message="Поиск выполнен с использованием:" sling:key="resultFormCaption"/>
+    <searchResult jcr:primaryType="sling:MessageEntry" sling:message="Найдено {0} записей:" sling:key="searchResult"/>
+    <formCaption jcr:primaryType="sling:MessageEntry" sling:message="Свойства поиска:" sling:key="formCaption"/>
+    <btnCaption jcr:primaryType="sling:MessageEntry" sling:message="Поиск" sling:key="btnCaption"/>
+    <method jcr:primaryType="sling:MessageEntry" sling:message="Метод:" sling:key="method"/>
+    <path jcr:primaryType="sling:MessageEntry" sling:message="Путь:" sling:key="path"/>
+    <keywords jcr:primaryType="sling:MessageEntry" sling:message="Ключевые слова:" sling:key="keywords"/>
+</jcr:root>

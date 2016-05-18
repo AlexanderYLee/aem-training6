@@ -2,22 +2,14 @@
 <jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2016-05-12T14:09:53.614+03:00"
+        cq:cloudserviceconfigs="[[]]"
+        cq:lastModified="{Date}2016-05-18T10:06:19.601+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/aem-training6/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="Search for pdf asset"
-        sling:resourceType="aem-training6/components/page-content">
-        <search-button
-            jcr:lastModified="{Date}2016-05-12T14:09:53.608+03:00"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="aem-training6/components/search-button"
-            keywords="QUERY BUILDER"
-            method="QueryBuilder"
-            path="/content/searchAssetPage"/>
-    </jcr:content>
-    <_x0036_.7_Query_Syntax_And_Best_Practices.pdf/>
+        sling:resourceType="foundation/components/redirect"
+        redirectTarget="/content/searchAssetPage/en"/>
     <oak:index jcr:primaryType="nt:unstructured">
         <damAssetLucene
             jcr:primaryType="oak:QueryIndexDefinition"
@@ -72,4 +64,6 @@
             </indexRules>
         </damAssetLucene>
     </oak:index>
+    <en/>
+    <ru/>
 </jcr:root>

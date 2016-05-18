@@ -1,14 +1,15 @@
-<form method="get" action="/services/search">
-    <div data-sly-use.searchBtnProps="SearchButtonProps">
-        Search properties:
+<div data-sly-use.searchBtnProps="SearchButtonProps">
+    <form method="get" action="${searchBtnProps.locale}.searchResults">
+        ${'formCaption' @ i18n, locale=searchBtnProps.locale}
         <ul>
-            <li>method: ${searchBtnProps.method}</li>
-            <li>path: ${searchBtnProps.path}</li>
-            <li>keywords: ${searchBtnProps.keywords}</li>
+            <li>${'method' @ i18n, locale=searchBtnProps.locale} ${searchBtnProps.method}</li>
+            <li>${'path' @ i18n, locale=searchBtnProps.locale} ${searchBtnProps.path}</li>
+            <li>${'keywords' @ i18n, locale=searchBtnProps.locale} ${searchBtnProps.keywords}</li>
         </ul>
         <input type="hidden" name="method" value="${searchBtnProps.method}"/>
         <input type="hidden" name="keywords" value="${searchBtnProps.keywords}"/>
         <input type="hidden" name="path" value="${searchBtnProps.path}"/>
-    </div>
-    <input type="submit" title="Search" value="Search">
-</form>
+        <input type="submit" title="${'btnCaption' @ i18n, locale=searchBtnProps.locale}"
+               value="${'btnCaption' @ i18n, locale=searchBtnProps.locale}">
+    </form>
+</div>

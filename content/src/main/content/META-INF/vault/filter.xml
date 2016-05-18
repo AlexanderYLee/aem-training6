@@ -4,5 +4,4 @@
     <filter root="/content/searchAssetPage"/>
     <filter root="/apps/system/config"/>
     <filter root="/home/users/system/uCgq-bI6fxwzt70tHpxu"/>
-    <filter root="/jcr:system/rep:permissionStore/crx.default/readUser"/>
 </workspaceFilter>

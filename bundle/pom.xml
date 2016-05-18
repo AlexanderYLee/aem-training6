@@ -93,6 +93,7 @@
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>com.epam.aemtraining.aem-training6-bundle</Bundle-SymbolicName>
+                        <Export-Package>com.epam.aemtraining.impl.servlets</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

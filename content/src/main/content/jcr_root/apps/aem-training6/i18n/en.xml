@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root jcr:language="en" jcr:primaryType="sling:Folder" jcr:mixinTypes="[mix:language]"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0">
+    <resultFormCaption jcr:primaryType="sling:MessageEntry" sling:message="Search executed with:" sling:key="resultFormCaption"/>
+    <searchResult jcr:primaryType="sling:MessageEntry" sling:message="Found {0} records:" sling:key="searchResult"/>
+    <formCaption jcr:primaryType="sling:MessageEntry" sling:message="Search properties:" sling:key="formCaption"/>
+    <btnCaption jcr:primaryType="sling:MessageEntry" sling:message="Search" sling:key="btnCaption"/>
+    <method jcr:primaryType="sling:MessageEntry" sling:message="Method:" sling:key="method"/>
+    <path jcr:primaryType="sling:MessageEntry" sling:message="Path:" sling:key="path"/>
+    <keywords jcr:primaryType="sling:MessageEntry" sling:message="Keywords:" sling:key="keywords"/>
+</jcr:root>
